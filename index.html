@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Institute of Digital Risk (IDR)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon handling could go here -->
+    <link rel="icon" type="image/svg+xml" href="logo-icon.svg">
+</head>
+<body>
+    <!-- Fullscreen Video Background -->
+    <video autoplay loop muted playsinline class="bg-video">
+        <source src="bg-video.mp4" type="video/mp4">
+    </video>
+
+    <!-- Structured Tech Overlay (Darkens video) -->
+
+    <header class="navbar">
+        <nav class="nav-container">
+            <a href="#" class="logo-link">
+                <!-- Inline SVG to allow CSS manipulation if needed, or img tag -->
+                <img src="logo-full.svg" alt="Institute of Digital Risk Logo" class="nav-logo desktop-logo">
+                <img src="logo-icon.svg" alt="IDR Icon" class="nav-logo mobile-logo">
+            </a>
+
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <a href="#contact" class="btn btn-primary">Join the Institute</a>
+            </div>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="hero-glow"></div>
+            <div class="hero-content">
+
+                <h1 class="hero-title">Advancing the Future of <span class="highlight typing-text"></span></h1>
+                <p class="hero-subtitle">IDR trains and deploys digital risk practitioners, combining academic
+                    collaboration and industry practice.</p>
+                <div class="hero-actions">
+                    <a href="#training" class="btn btn-primary">Explore Programs</a>
+                    <a href="#contact" class="btn btn-secondary">Hire Talent</a>
+                </div>
+            </div>
+        </div>
+
+        <section id="about" class="about-section fade-in">
+            <div class="container about-container">
+                <div class="about-content">
+                    <h2 class="section-title" style="margin-bottom: 32px;">About <span class="highlight">IDR</span></h2>
+                    <p class="about-text">The Institute of Digital Risk (IDR) is an industry-led training and deployment
+                        institute dedicated to creating elite professionals for digital, cyber, and technology risk
+                        roles. Our focus is strictly on preparing individuals to excel in regulated, high-consequence
+                        environments.</p>
+                    <p class="about-text">We bridge the gap between theory and execution by emphasizing the link between
+                        cutting-edge academic insight—through our esteemed UK university partnerships—and hands-on,
+                        real-world industry projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="features-section">
+            <div class="container">
+                <h2 class="section-title">Core Service Model</h2>
+                <div class="grid features-grid">
+
+                    <div class="glass-card fade-in">
+                        <div class="card-icon">🎓</div>
+                        <h3>Academy</h3>
+                        <p>Comprehensive training and bootcamps designed for students and professionals to master
+                            digital and AI risk in high-consequence environments.</p>
+                    </div>
+
+                    <div class="glass-card fade-in" style="transition-delay: 0.1s;">
+                        <div class="card-icon">💡</div>
+                        <h3>Innovation & Incubation</h3>
+                        <p>Fostering the development of cutting-edge IP, future risk models, and robust AI governance
+                            frameworks to stay ahead of emerging threats.</p>
+                    </div>
+
+                    <div class="glass-card fade-in" style="transition-delay: 0.2s;">
+                        <div class="card-icon">🧭</div>
+                        <h3>Advisory Services</h3>
+                        <p>Expert guidance helping organizations seamlessly implement critical frameworks like NIST, ISO
+                            27001, and NIS2 into their operations.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="pipeline-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Our Proven Methodology</h2>
+                <div class="pipeline-container">
+                    <div class="pipeline-step">
+                        <div class="step-circle">1</div>
+                        <h4>Train</h4>
+                        <p>Immersive bootcamps</p>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="step-circle">2</div>
+                        <h4>Hire</h4>
+                        <p>Elite placement</p>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="step-circle">3</div>
+                        <h4>Innovate</h4>
+                        <p>Industry R&D</p>
+                    </div>
+                    <div class="pipeline-connector"></div>
+                    <div class="pipeline-step">
+                        <div class="step-circle">4</div>
+                        <h4 class="pipeline-step-title">Deploy</h4>
+                        <p>Real-world impact</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="community-section fade-in">
+            <div class="container community-container">
+                <div class="community-content">
+                    <h2 class="section-title" style="margin-bottom: 32px;">Who We <span class="highlight">Serve</span>
+                    </h2>
+                    <p class="community-text">Our community is built for those ready to lead in high-stakes
+                        environments. We empower <strong>students</strong> and <strong>early-career
+                            professionals</strong> looking to break into the industry, alongside seasoned
+                        <strong>practitioners</strong> in critical sectors like financial services and critical
+                        infrastructure who are seeking advanced upskilling in digital and cyber risk.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container contact-container">
+                <div class="contact-card glass-card fade-in">
+                    <h2 class="section-title" style="margin-bottom: 16px;">Register <span
+                            class="highlight">Interest</span></h2>
+                    <p style="margin-bottom: 32px; color: var(--gray);">Join our community or partner with us to build
+                        the defense frameworks of tomorrow. Contact our team to learn more.</p>
+
+                    <form class="contact-form" action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Thank you for registering your interest!');">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-column footer-brand">
+                <img src="logo-full.svg" alt="IDR Logo" class="footer-logo">
+                <p>Equipping modern organizations with the resilience and foresight to navigate an AI-driven digital frontier.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">IN</a>
+                    <a href="#" aria-label="Twitter">X</a>
+                </div>
+            </div>
+            
+            <div class="footer-column footer-links">
+                <h3>Explore</h3>
+                <a href="#about">About Us</a>
+                <a href="#services">Core Services</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+
+            <div class="footer-column footer-links">
+                <h3>Legal</h3>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Institute of Digital Risk. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu and reveal animations
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(element => {
+            observer.observe(element);
+        });
+
+        // Video Hand-off Logic (Glide & Lock)
+        const bgVideo = document.querySelector('.bg-video');
+        const aboutSection = document.getElementById('about');
+        const servicesSection = document.getElementById('services');
+        
+        let isTransitioning = false;
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const viewportHeight = window.innerHeight;
+            const aboutTop = aboutSection.offsetTop;
+            const servicesTop = servicesSection.offsetTop;
+
+            // Thresholds
+            const startDock = aboutTop - viewportHeight * 0.6;
+            const endAbout = servicesTop - viewportHeight * 0.2;
+
+            // 1. HOME STATE
+            if (scrollY < startDock) {
+                if (bgVideo.classList.contains('docked')) {
+                    // Return to body for fullscreen fixed
+                    bgVideo.classList.remove('docked', 'locked');
+                    document.body.prepend(bgVideo);
+                }
+                bgVideo.classList.remove('hidden');
+            } 
+            // 2. DOCKING / LOCKED STATE
+            else if (scrollY < endAbout) {
+                if (!bgVideo.classList.contains('docked') && !isTransitioning) {
+                    isTransitioning = true;
+                    // Start Glide
+                    bgVideo.classList.add('docked');
+                    
+                    // After glide transition (800ms), lock to section
+                    setTimeout(() => {
+                        if (bgVideo.classList.contains('docked')) {
+                            bgVideo.classList.add('locked');
+                            aboutSection.appendChild(bgVideo);
+                        }
+                        isTransitioning = false;
+                    }, 800);
+                }
+                bgVideo.classList.remove('hidden');
+            }
+            // 3. PAST ABOUT
+            else {
+                bgVideo.classList.add('hidden');
+            }
+        });
+
+        // Typing Effect for Hero
+        const typingSpan = document.querySelector('.typing-text');
+        const textArray = ["Digital Risk", "AI Governance", "Cyber Resilience", "Innovation"];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+            const currentText = textArray[textIndex];
+            
+            if (isDeleting) {
+                typingSpan.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingSpan.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 50 : 100;
+
+            if (!isDeleting && charIndex === currentText.length) {
+                typeSpeed = 2000; // Pause at end of word
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+                typeSpeed = 500; // Pause before typing new word
+            }
+
+            setTimeout(typeEffect, typeSpeed);
+        }
+
+        // Add a cursor element dynamically if needed, or rely on CSS border
+        setTimeout(typeEffect, 1000);
+    </script>
+</body>
+
+</html>

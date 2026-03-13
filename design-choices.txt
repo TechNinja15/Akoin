@@ -1,0 +1,5 @@
+# Institute of Digital Risk (IDR) - Design Choices
+
+1. **Symbolism*: The core of the logo is an isometric cube that is deliberately fragmented. The solid black pane represents a strong foundation and resilience, the transparent outlined pane represents structural frameworks and transparency, and the solid orange top symbolizes a spotlight on digital alerts and awareness.
+2. **Color Palette**: The palette leverages Orange (#FF6B00) for high visibility and alertness—ideal for a "risk" context. The high-contrast pairing of Black (#0A0A0A) and White (#FFFFFF) grounds the brand, imparting a severe, premium, and authoritative, yet accessible tech-education feel.
+3. **Typography**: The text variation uses a bold sans-serif geometric font with slight negative letter-spacing to appear structured, substantial, and incredibly modern, reinforcing the concept of a forward-thinking, industry-led institute.
