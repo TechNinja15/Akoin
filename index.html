@@ -58,6 +58,49 @@
             </div>
         </div>
 
+        <section id="training" class="training-section fade-in">
+            <div class="container">
+                <h2 class="section-title">Professional <span class="highlight">Programs</span></h2>
+                <div class="grid programs-grid">
+                    <div class="glass-card program-card">
+                        <div class="card-tag">Elite</div>
+                        <h3>Digital Risk Practitioner</h3>
+                        <p>Our flagship program focused on the intersection of digital risk, regulation, and industry practice.</p>
+                        <ul class="program-features">
+                            <li>Risk Frameworks (NIST, ISO)</li>
+                            <li>Regulatory Compliance</li>
+                            <li>Scenario Planning</li>
+                        </ul>
+                        <button class="btn btn-outline btn-sm learn-more" data-program="digital-risk">Learn More</button>
+                    </div>
+
+                    <div class="glass-card program-card">
+                        <div class="card-tag">Advanced</div>
+                        <h3>AI Governance & Safety</h3>
+                        <p>Specialized training for overseeing AI systems, ensuring ethical deployment and safety compliance.</p>
+                        <ul class="program-features">
+                            <li>AI Ethics & Bias</li>
+                            <li>Governance Models</li>
+                            <li>Safety Standards</li>
+                        </ul>
+                        <button class="btn btn-outline btn-sm learn-more" data-program="ai-governance">Learn More</button>
+                    </div>
+
+                    <div class="glass-card program-card">
+                        <div class="card-tag">Specialist</div>
+                        <h3>Cyber Resilience Strategy</h3>
+                        <p>Build the resilience required to withstand and recover from sophisticated cyber threats in critical sectors.</p>
+                        <ul class="program-features">
+                            <li>Threat Landscape Analysis</li>
+                            <li>Crisis Management</li>
+                            <li>Recovery Architectures</li>
+                        </ul>
+                        <button class="btn btn-outline btn-sm learn-more" data-program="cyber-resilience">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="about" class="about-section fade-in">
             <div class="container about-container">
                 <div class="about-content">
@@ -188,8 +231,15 @@
                 <img src="logo-full.svg" alt="IDR Logo" class="footer-logo">
                 <p>Equipping modern organizations with the resilience and foresight to navigate an AI-driven digital frontier.</p>
                 <div class="social-links">
-                    <a href="#" aria-label="LinkedIn">IN</a>
-                    <a href="#" aria-label="Twitter">X</a>
+                    <a href="https://www.linkedin.com/in/avneesh-kumar-jha-443034319/" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://www.instagram.com/its_avneesh_15/" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="https://github.com/TechNinja15" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
                 </div>
             </div>
             
@@ -202,8 +252,8 @@
 
             <div class="footer-column footer-links">
                 <h3>Legal</h3>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
             </div>
         </div>
         
@@ -211,6 +261,16 @@
             <p>&copy; 2026 Institute of Digital Risk. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Program Detail Modal -->
+    <div id="programModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <div id="modalBody">
+                <!-- Content will be injected by JS -->
+            </div>
+        </div>
+    </div>
 
     <script>
         // Simple script for mobile menu and reveal animations
@@ -320,6 +380,87 @@
 
             setTimeout(typeEffect, typeSpeed);
         }
+
+        // Program Modal Logic
+        const modalData = {
+            'digital-risk': {
+                title: 'Digital Risk Practitioner',
+                tag: 'Elite',
+                description: 'The Digital Risk Practitioner program is designed for professionals who need to navigate the complex landscape of technology-driven risk in regulated environments. This intensive path focuses on practical application of global frameworks.',
+                features: [
+                    'Mastery of NIST and ISO 27001 risk management frameworks.',
+                    'Deep dive into regulatory requirements for financial and critical infrastructure.',
+                    'Advanced scenario modeling and impact assessment techniques.',
+                    'Direct mentorship from industry-leading risk practitioners.'
+                ]
+            },
+            'ai-governance': {
+                title: 'AI Governance & Safety',
+                tag: 'Advanced',
+                description: 'As AI systems become central to business operations, the need for robust governance is paramount. This program equips you with the tools to ensure AI models are ethical, safe, and compliant with emerging global standards.',
+                features: [
+                    'Ethical AI design principles and bias mitigation strategies.',
+                    'Implementing AI safety guardrails and monitoring systems.',
+                    'Understanding the EU AI Act and other global regulatory frameworks.',
+                    'Governance structures for enterprise-wide AI deployment.'
+                ]
+            },
+            'cyber-resilience': {
+                title: 'Cyber Resilience Strategy',
+                tag: 'Specialist',
+                description: 'Cyber resilience goes beyond mere defense; it is about the ability of an organization to continue operating despite sophisticated attacks. This specialist path focus on building "antifragile" systems and processes.',
+                features: [
+                    'Advanced threat hunting and landscape analysis.',
+                    'Crisis management and communication in high-stakes environments.',
+                    'Designing recovery architectures that minimize downtime.',
+                    'Business continuity planning for digital-first enterprises.'
+                ]
+            }
+        };
+
+        const modal = document.getElementById('programModal');
+        const modalBody = document.getElementById('modalBody');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.learn-more').forEach(button => {
+            button.addEventListener('click', () => {
+                const programId = button.getAttribute('data-program');
+                const data = modalData[programId];
+                
+                if (data) {
+                    modalBody.innerHTML = `
+                        <div class="modal-body-header">
+                            <div class="card-tag">${data.tag}</div>
+                            <h2 class="section-title">${data.title}</h2>
+                        </div>
+                        <div class="modal-body-content">
+                            <p>${data.description}</p>
+                            <div class="modal-features-list">
+                                <h4>Key Learning Modules:</h4>
+                                <ul class="program-features">
+                                    ${data.features.map(f => `<li>${f}</li>`).join('')}
+                                </ul>
+                            </div>
+                            <a href="#contact" class="btn btn-primary" style="width: 100%; margin-top: 32px;" onclick="document.getElementById('programModal').style.display='none'">Enroll Now</a>
+                        </div>
+                    `;
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; // Prevent scroll
+                }
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        });
+
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
 
         // Add a cursor element dynamically if needed, or rely on CSS border
         setTimeout(typeEffect, 1000);
